@@ -45,7 +45,7 @@ gulp.task('html', function() {
       .on('error', interceptErrors)
       .pipe(gulp.dest('./build/'));
 });
-
+//Baut Templates als Javascript 
 gulp.task('views', function() {
   return gulp.src(viewFiles)
       .pipe(templateCache({
